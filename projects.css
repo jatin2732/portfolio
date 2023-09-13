@@ -1,0 +1,265 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    background: url(./img/4f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+* {
+    color: #fff;
+}
+
+.container {
+    animation: load 2s;
+    margin-right: 20px;
+
+
+}
+
+@keyframes load {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.cursor {
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    mix-blend-mode: difference;
+    transition: 0.1s;
+}
+
+a:hover~.cursor {
+    transform: scale(2);
+
+}
+
+/* #toggleDark{
+        font-size: 30px;
+        cursor: pointer;
+        transform: translate(-50%, -50%);
+} */
+.top {
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+
+.path {
+    position: relative;
+    width: 20%;
+    left: 5%;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: 'Kanit', sans-serif;
+    transform: scaleX(1);
+
+}
+
+.uppersec {
+    width: 10%;
+    position: absolute;
+    right: 5%;
+    padding: 10px;
+    display: flex;
+
+}
+
+.toggle {
+    width: 30px;
+    color: #fff;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    color: #fff;
+}
+
+.toggle>i {
+    font-size: 40px;
+    transition: 0.2s;
+}
+
+.contents {
+    display: flex;
+    position: relative;
+    top: 100px;
+    width: 100%;
+    margin: 10px auto;
+
+}
+
+#bac .img {
+    height: 350px;
+    width: 40%;
+}
+
+.img img {
+    min-height: 360px;
+    width: 400px;
+    /* border: 1px solid; */
+    border-radius: 30px;
+}
+
+#ProjHead {
+    font-size: 3em;
+}
+
+.PgAnchors {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px;
+    height: 350px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.PgAnchors a {
+    font-size: 2.5em;
+    color: #fff;
+    text-decoration: none;
+    /* border: 1px solid; */
+    /* width:50%; */
+}
+
+.PgAnchors a:hover {
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+.cursor {
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    mix-blend-mode: difference;
+    transition: 0.1s;
+}
+/* respnive */
+
+@media (max-width:1200px) and (min-width: 600px) {
+    body {
+        overflow: hidden;
+        /* overflow-y: scroll; */
+    }
+
+
+    .toggle>i {
+        font-size: 30px;
+    }
+
+    .contents {
+        /* border: 1px solid; */
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+    
+
+    .img img {
+        min-height: 360px;
+        width: 350px;
+        /* border: 1px solid; */
+        border-radius: 30px;
+    }
+
+
+    #ProjHead {
+        font-size: 2.3em;
+    }
+
+    .PgAnchors {
+        /* border: 1px solid; */
+        width: 300px;
+        margin-left: 10px;
+
+    }
+
+    .PgAnchors a {
+        font-size: 2em;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width: 600px) and (min-width:200px) {
+    body {
+        overflow: hidden;
+        /* overflow-y: scroll; */
+    }
+
+    .top {
+        position: relative;
+        top: 30px;
+    }
+
+    .uppersec {
+        width: 10%;
+        margin-right: 10px;
+
+    }
+
+    .toggle>i {
+        font-size: 20px;
+    }
+
+    .path {
+        /* border: 1px solid; */
+        font-size: .8em;
+        width: 50%;
+        color: grey;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .contents {
+        width: 100%;
+        padding: 30px;
+        top: 20px;
+    }
+
+    .PgAnchors {
+        width: 100%;
+    }
+
+}

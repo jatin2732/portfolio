@@ -1,0 +1,358 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    /* height: 100vh; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    background: url(./img/4f.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+
+
+
+
+* {
+    color: #fff;
+}
+
+.container {
+    animation: load 2s;
+    /* border: 1px solid; */
+    margin-right: 20px;
+    /* margin-top: 20px; ; */
+    display: flex;
+}
+
+@keyframes load {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.top {
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+
+.path {
+    position: relative;
+    width: 20%;
+    left: 5%;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: 'Kanit', sans-serif;
+    transform: scaleX(1);
+
+}
+
+.uppersec {
+    width: 10%;
+    position: absolute;
+    right: 5%;
+    padding: 10px;
+    display: flex;
+
+}
+
+.toggle {
+    width: 30px;
+    color: #000000;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    color: #000000;
+}
+
+.toggle>i {
+    font-size: 40px;
+    transition: 0.2s;
+}
+
+.contents {
+    /* border: 1px solid; */
+    width: 50%;
+    /* position: relative; */
+    margin-top: 130px;
+    left: 10%;
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.head {
+    /* border: 1px solid; */
+    letter-spacing: 2.5px;
+    font-size: 3em;
+    transform: scaleX(1.5);
+    width: 60%;
+    margin: 10px auto;
+    font-family: 'Kanit', sans-serif;
+}
+
+.hr {
+    border: 2px solid white
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+.Highlights {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.1em;
+}
+
+.ImgSection {
+    /* border: 1px solid; */
+    width: 40%;
+    position: relative;
+    top: 130px;
+    left: 12%;
+    height: 400px;
+    /* top: 50px; */
+    /* overflow: hidden; */
+
+}
+
+.ImgSection img {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+
+}
+
+.Mying {
+    /* border: 1px solid; */
+    height: 560px;
+    width: 290px;
+    border-radius: 20px;
+    position: relative;
+    top: 10px;
+    /* bottom: 10px; */
+
+}
+
+.bg-img {
+    height: 460px;
+}
+
+.ImgSection:hover .bg-img {
+    bottom: 40px;
+
+}
+
+.ImgSection:hover .Mying {
+    left: 54%;
+}
+
+#cv {
+    border: none;
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+    background: radial-gradient(rgb(74, 150, 237), white);
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 15%;
+    animation: load2 2.5s;
+    color: black;
+
+}
+
+
+@keyframes load2 {
+    from {
+        opacity: 0;
+        transform: translateY(+200%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+#cv {
+    cursor: pointer;
+}
+.cursor {
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    mix-blend-mode: difference;
+    transition: 0.1s;
+}
+
+/* responsive */
+
+
+
+@media (max-width:1200px) and (min-width: 600px) {
+    body {
+        overflow: hidden;
+        /* overflow-y: scroll; */
+    }
+
+    .toggle>i {
+        font-size: 30px;
+    }
+
+    .head {
+        font-size: 2.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .Highlights {
+        font-size: 1.2em;
+    }
+
+    /* .container{border: 1px solid; */
+
+    .ImgSection {
+        /* border:1px solid ; */
+        height: 300px;
+
+
+    }
+
+    .Mying {
+        /* border: 1px solid; */
+        height: 400px;
+        width: 200px;
+    }
+
+    .bg-img {
+        height: 400px;
+        position: absolute;
+        bottom: 100px;
+    }
+
+    #cv {
+        font-size: 0.8em;
+    }
+}
+
+
+@media (max-width: 600px) and (min-width:200px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    .top {
+        position: relative;
+        top: 30px;
+    }
+
+    .uppersec {
+        width: 10%;
+        margin-right: 10px;
+
+    }
+
+    .toggle>i {
+        font-size: 20px;
+    }
+
+    .path {
+        /* border: 1px solid; */
+        font-size: .8em;
+        width: 50%;
+        color: grey;
+    }
+
+
+    .container {
+        /* border: 1px solid; */
+        margin-top: 10px;
+        display: block;
+    }
+
+    .contents {
+        /* border: 1px solid; */
+        width: 90%;
+        margin: 30px auto;
+        padding: 10px;
+    }
+
+    .head {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .Highlights {
+        font-size: 1.3em;
+    }
+
+    .ImgSection {
+        /* border: 1px solid; */
+        position: relative;
+        top: 30px;
+        left: 0px;
+        width: 90%;
+        margin: 0px auto;
+        height: 400px;
+
+    }
+
+    .Mying {
+        /* border: 1px solid; */
+        height: 100%;
+        width: 70%;
+        position: relative;
+        top: 10px;
+        bottom: 10px;
+
+
+    }
+
+    .bg-img {
+        height: 100%;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    #cv {
+        /* border: 1px solid; */
+        width: 30%;
+        font-size: 0.8em;
+        margin-top: 100px;
+        margin-left: 100px;
+        margin-bottom: 200px;
+        
+    }
+}

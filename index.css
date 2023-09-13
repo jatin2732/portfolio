@@ -1,0 +1,166 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+   background: url(./img/4f.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+    /* box-sizing: border-box; */
+}
+
+*{
+    color: #fff;
+}
+
+
+@keyframes load {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.top {
+    /* border: 1px solid; */
+    display: flex;
+    position: relative;
+    top: 50px;
+}
+
+
+
+.uppersec {
+    /* border: 1px solid black; */
+    width: 10%;
+    position: absolute;
+    right: 5%;
+    padding: 10px;
+    display: flex;
+
+}
+
+.toggle {
+    width: 30px;
+    color: #000000;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.toggle:hover {
+    color: #000000;
+}
+
+.toggle>i {
+    font-size: 40px;
+    transition: 0.2s;
+}
+
+
+#Rec_elements {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+    width: 35%;
+    margin: 0px auto;
+    margin-top: 50px;
+    letter-spacing: 2.5px;
+    font-size: 3.4em;
+    transform: scaleX(1.5);
+
+}
+
+
+#Rec_elements a {
+    /* border: 1px solid; */
+    width: 90%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: normal;
+    transition: 0.5s;
+    animation: load 2s;
+
+}
+
+#Rec_elements>a:hover {
+    letter-spacing: 5px;
+}
+.ReachMe{
+    /* border: 1px solid; */
+    width: 50%;
+    position: relative; 
+    left: 25%;
+animation: load2 2s;
+}
+
+@keyframes load2 {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+.ReachMe a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Kanit', sans-serif;
+    margin: 0px 10px;
+}
+
+.ReachMe a:hover{
+    color: #fff;
+
+}
+
+.ReachMe>a{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    padding: 10px;
+}
+
+.ReachMe>a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.ReachMe>a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.cursor {
+    position: absolute;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    mix-blend-mode: difference;
+    transition: 0.1s;
+}
+
+
+
+
+
