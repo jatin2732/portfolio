@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact-me </title>
+    <title>My portfolio / Contact-me </title>
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./contact.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -16,13 +17,21 @@
 
 <body>
 
-    <div class="cursor"></div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+
+    <div id="cursor"></div>
+    <div id="circle"></div>
+    
     <div class="top">
-        <a href="./index.html"><img width="64" height="64"
+        <a id="a-link" href="./home.html"><img width="64" height="64"
                 src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" alt="circled-left-2" /></a>
         <div class="path">RECEPTION / CONTACT</div>
         <div class="uppersec">
-            <div><a class="toggle" href="./index.html"><i class="fa fa-bars"></i></a></div>
+            <div  id="a-link"><a class="toggle" href="./home.html"><i class="fa fa-bars"></i></a></div>
         </div>
     </div>
 
@@ -33,39 +42,29 @@
                 <h1>CONTACT</h1>
                 <h1>E-mail</h1>
                 <input type="text" value="jatinsharma2732@gmail.com" id="copyMe" readonly>
-                <button onclick="copyMyText()">copy</button>
+                <button  id="a-link" id="cbtn" onclick="copyMyText()">copy</button>
             </div>
 
             <div class="social">
                 <h1>SOCIAL MEDIA</h1>
-                <a href="" target="_blank">&rarr; &nbsp;Github</a>
-                <a href="" target="_blank">&rarr;&nbsp;linkedin</a>
-
+                <a  id="a-link" href="" target="_blank">&rarr; &nbsp;Github</a>
+                <a  id="a-link" href="" target="_blank">&rarr;&nbsp;linkedin</a>
             </div>
         </div>
     </div>
+    <form method="post" name="backend"
+        action="https://script.google.com/macros/s/AKfycbylx6AYLYs1oFMgKFmZxHTTQbZ82yZvlv4ZGcGhEIIcPGxehXZaW_guQXBI-u9ngRInyA/exec">
+        <input type="text" name="Name" id="" placeholder=" Name" required>
+        <input type="email" name="E-mail" id="" placeholder="E-mail" required>
+        <textarea name="Message" placeholder="Feel free to give feedback or contact me"></textarea>
+        <button class="submit"  id="a-link">submit</button>
+    </form>
 
-    <script>
-
-        function cirlce() {
-            window.addEventListener("mousemove", function (dets) {
-                this.document.querySelector(".cursor").style.transform = `translate(${dets.clientX}px , ${dets.clientY}px)`;
+    <script src="./contact.js"></script>
 
 
-            })
-        }
-        cirlce();
-        function copyMyText() {
 
-            var textToCopy = document.getElementById("copyMe");
 
-            textToCopy.select();
-
-            document.execCommand("copy");
-        }
-        var box = document.getElementById('copyMe').readOnly = true
-
-    </script>
 </body>
 
 </html>

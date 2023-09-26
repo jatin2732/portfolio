@@ -38,12 +38,8 @@ function handleMouseLeave() {
   circle.classList.remove('hovered');
 }
 
-
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
   setTimeout(function() {
       document.querySelector("body").classList.add("loaded");
-  }, 3000)
+  }, 1000)
 });

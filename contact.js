@@ -1,16 +1,3 @@
-
-let btn = document.querySelector(".toggle");
-let icon = btn.querySelector(".fa-bars");
-
-btn.onclick = function (){
-    if(icon.classList.contains("fa-bars")){
-        icon.classList.replace("fa-bars", "fa-times");
-    }
-    else{
-        icon.classList.replace("fa-times", "fa-bars");
-    }
-}
-
 var a_link = document.querySelectorAll('#a-link');
 // Handle mouse over/out event on links
 a_link.forEach(e => e.addEventListener('mouseenter', handleMouseEnter));
@@ -39,11 +26,33 @@ function handleMouseLeave() {
 }
 
 
+function copyMyText() {
+
+    var textToCopy = document.getElementById("copyMe");
+
+    textToCopy.select();
+
+    document.execCommand("copy");
+}
+var box = document.getElementById('copyMe').readOnly = true
+
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbylx6AYLYs1oFMgKFmZxHTTQbZ82yZvlv4ZGcGhEIIcPGxehXZaW_guQXBI-u9ngRInyA/exec'
+const form = document.forms['backend']
+
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thank you!  your form is submitted successfully. " ))
+        .then(() => {  window.location.reload(); })
+        .catch(error => console.error('Error!', error.message))
+    })
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(function() {
-      document.querySelector("body").classList.add("loaded");
-  }, 3000)
-});
+    document.addEventListener("DOMContentLoaded", function() {
+      setTimeout(function() {
+          document.querySelector("body").classList.add("loaded");
+      }, 1000)
+    });

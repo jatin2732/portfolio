@@ -1,59 +1,62 @@
-
-@media (max-width:1200px) and (min-width: 600px){
+@media (max-width:1200px) and (min-width: 600px) {
     body {
         overflow: hidden;
         /* overflow-y: scroll; */
     }
 
+   
     .toggle>i {
         font-size: 30px;
     }
-
-     #Rec_elements{
+    .para{
+        /* margin-right: 20px; */
+        margin-top: 50px;
+        width: 65%;
         /* border: 1px solid; */
-            width: 60%;
-            font-size: 3em;
-            position: relative;
-            top: 30px;
-            padding: 5px 50px;
-        
-        }
-        .ReachMe {
-            /* border: 1px solid; */
-            width: 350px;
-            margin-top: 20px;
-            position: relative;
-            left: 100px;
-            /* display: flex;
-            flex-direction: row;
-            justify-content: center; */
+        font-size: 2.7em;
+        margin-bottom: 0px;
+    }
+    .hover-2>a{
+        margin-top: 0px;
+        font-size: 1em;
+    }
+    .Referpages{
+        display: flex;
+        /* width: 60%; */
+        /* justify-content: center;
+        align-items: center; */
+        /* border: 1px solid; */
+    }
 
-        }
-      
-
-
+    .Referpages>a{
+        font-size: 1em;
+        /* border: 1px solid; */
+        width: 100%;
+    }
 }
+
+
+
+
 
 
 @media (max-width: 600px) and (min-width:200px) {
     body {
         overflow: hidden;
         /* overflow-y: scroll; */
+        height: 100vh;
     }
 
-    .top {position: relative;
+    .top {
+        position: relative;
         top: 30px;
     }
+
+
     .uppersec {
         width: 10%;
-        /* border: 1px solid; */
         margin-right: 10px;
-    }
-    .path {
         /* border: 1px solid; */
-        font-size: .8em;
-        width: 50%;
-        color: grey;
     }
 
     .toggle>i {
@@ -61,28 +64,50 @@
     }
 
     .container {
-        /* border: 1px solid; */
-        margin-top: 50px;
+        /* margin-top: 10px; */
+        font-size: 1em;
+        margin-right: 20px;
+
     }
 
-    #Rec_elements {
-        /* border: 1px solid; */
+    #loader{
+        width: 100px;
+        height: 100px;
+       position: relative;
+       top: 450px;
+       left: 55%;
+      
+    }
+    .para {
+        margin-top: 80px;
+
         width: 60%;
-        font-size: 2em;
-        position: relative;
-        top: 30px;
-    }
-
-    #Rec_elements a:hover {
-        letter-spacing: 3px;
-    }
-
-    .ReachMe {
+        font-size: 1.5em;
         /* border: 1px solid; */
-        width: 80%;
-        margin-top: 20px;
-        position: relative;
-        left: 10px;
     }
 
+    .hover-2 {
+        width: 80%;
+
+    }
+
+    .hover-2>a {
+        font-size: 0.8em;
+    }
+
+    .Referpages {
+        /* border: 1px solid; */
+        padding: 0px;
+        /* display: block; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .Referpages>a {
+        font-size: 0.8em;
+        width: 80%;
+        margin: 0px 20px;
+    }
 }

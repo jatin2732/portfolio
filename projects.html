@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>projects</title>
-
+    <title>My portfolio / projects</title>
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="projects.css">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,16 +17,23 @@
 
 <body>
 
-<div class="cursor"></div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+
+    <div id="cursor"></div>
+    <div id="circle"></div>
 
 
     <div class="top">
-        <a href="./index.html"><img width="64" height="64" src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" alt="circled-left-2"/></a>
+        <a id="a-link" href="./home.html"><img width="64" height="64" src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" alt="circled-left-2"/></a>
         <div class="path">RECEPTION / PROJECTS</div>
 
         <div class="uppersec">
             
-            <div><a class="toggle" href="./index.html"><i class="fa fa-bars"></i></a></div>
+            <div id="a-link"><a class="toggle" href="./home.html"><i class="fa fa-bars"></i></a></div>
 
         </div>
     </div>
@@ -38,10 +45,10 @@
             </div>
             <div class="PgAnchors">
                 <h1 id="ProjHead">PROJECTS</h1>
-                <a  onmouseover="SetNew()" onmouseout="SetOld()" href="">project 1</a>
-                <a onmouseover="SetNew2()" onmouseout="SetOld()" href="">project 2</a>
-                <a onmouseover="SetNew3()" onmouseout="SetOld()" href="">project 3</a>
-                <a onmouseover="SetNew4()" onmouseout="SetOld()" href="">project 4</a>
+                <a id="a-link"onmouseover="SetNew()" onmouseout="SetOld()" href="">1.SEO Template</a>
+                <a id="a-link" onmouseover="SetNew2()" onmouseout="SetOld()" href="">2.Canadian wood</a>
+                <a id="a-link" onmouseover="SetNew3()" onmouseout="SetOld()" href="">3.Figma </a>
+                <a id="a-link" onmouseover="SetNew4()" onmouseout="SetOld()" href="">4.E-commerce</a>
             
             </div>
         </div>
