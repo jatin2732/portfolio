@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     overflow: hidden;
-    background: url(./img/new\ bg.jpg);
+    background: url(./img/mainimg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
