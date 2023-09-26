@@ -300,10 +300,10 @@ textarea {
 }
 .submit{
     border: none;
-    color: #fff;
+    color: #000;
     font-size: 16px;
     font-weight:bolder;
-    background-color: #555151;
+    background-color: #f4eaea;
     width: 10em;
     padding: 10px;
     border-radius: 8px;
