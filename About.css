@@ -5,7 +5,7 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-y: hidden;
     overflow-x: hidden;
-    background: url(./img/new\ bg.jpg);
+    background: url(./img/mainimg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -14,6 +14,7 @@ body {
 *{
     color: #fff;
 }
+
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -132,6 +133,7 @@ body {
   .loaded #loader {
     opacity: 0;
   }
+
 
 
 .container {
