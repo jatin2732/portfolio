@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>My portfolio</title>
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="indexres.css">
+    <link rel="stylesheet" type="text/css" href="indexres.css">
+    <link rel="stylesheet" href="./Transition.css ">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Londrina+Outline&display=swap" rel="stylesheet">
@@ -14,43 +17,63 @@
 
 </head>
 
-<body>
-    <!-- cursor -->
-    
-    <div class="cursor"></div>
+<body> 
+
+     
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+      </div>
+ 
+
+
+    <div id="cursor"></div>
+    <div id="circle"></div>
     <div class="top">
-        <a href="./reception.html"><img width="64" height="64" src="https://img.icons8.com/cotton/64/000000/circled-left-2.png" alt="circled-left-2"/></a>
-           
-            <div class="uppersec">
-                <!-- <img src="" alt="Theme"> -->
-                <div ><a class="toggle" href="./reception.html"><i class="fa fa-bars"></i></a></div>
-                
+        <div class="uppersec">
+
+            <div>
+             <a class="toggle" id="a-link" href="./home.html">
+                 <i class="fa fa-bars"></i>
+            </a>  
+               
             </div>
+
+
         </div>
-        
-        <div class="container">
-            <div id="Rec_elements">
-                
-                <a href="./reception.html">HOME</a>
-                <a href="./projects.html">PROJECTS</a>
-                <a href="./About.html">ABOUT</a>
-                <a href="./Contact.html">CONTACT</a>
-                
-            </div>
-            
-            <div class="ReachMe">
-                
-                <a href="" target="_blank">&rarr;&nbsp; Github</a>
-                <a href="" target="_blank">&rarr; &nbsp;linkedin</a>
-                
-            </div>
+    </div>
+
+    <div class="container">
+
+        <div class="para">
+
+            <span class="Outline" >HEY, I AM </span>
+            <span class="About" id="a-link">JATIN</span>
+            <span class="Outline" >, and</span>
+            <br>
+            <span class="Outline" > basically I AM A </span>
+            <span class="About" id="a-link"> FULL STACK DEVELOPER</span>
         </div>
-    </div >
-        
-        <script src="index.js"></script>
-        <script>
-            AOS.init();
-    </script
+
+
+        <div class="hover-2">
+            <a href="About.html" id="a-link">A MERN STACK DEVELOPER</a>
+        </div>
+
+        <div class="Referpages">
+            <a class="hover-underline-animation" href="./projects.html">See my projects</a>
+            <a class="hover-underline-animation" href="./About.html">Learn more</a>
+
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+
+
+
 </body>
 
 </html>
