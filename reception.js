@@ -1,17 +1,16 @@
+// 
+// function cirlce() {
+//     window.addEventListener("mousemove", function (dets) {
+//         this.document.querySelector(".cursor").style.transform = `translate(${dets.clientX}px , ${dets.clientY}px)`;
 
-let btn = document.querySelector(".toggle");
-let icon = btn.querySelector(".fa-bars");
 
-btn.onclick = function (){
-    if(icon.classList.contains("fa-bars")){
-        icon.classList.replace("fa-bars", "fa-times");
-    }
-    else{
-        icon.classList.replace("fa-times", "fa-bars");
-    }
-}
+//     })
+// }
+// cirlce();
 
-var a_link = document.querySelectorAll('#a-link');
+
+
+var a_link = document.querySelectorAll("#a-link");
 // Handle mouse over/out event on links
 a_link.forEach(e => e.addEventListener('mouseenter', handleMouseEnter));
 a_link.forEach(e => e.addEventListener('mouseleave', handleMouseLeave));
@@ -39,11 +38,15 @@ function handleMouseLeave() {
 }
 
 
+let btn = document.querySelector(".toggle");
+let icon = btn.querySelector(".fa-bars");
 
+btn.onclick = function (){
+    if(icon.classList.contains("fa-bars")){
+        icon.classList.replace("fa-bars", "fa-times");
+    }
+    else{
+        icon.classList.replace("fa-times", "fa-bars");
+    }
+}
 
-
-document.addEventListener("DOMContentLoaded", function() {
-  setTimeout(function() {
-      document.querySelector("body").classList.add("loaded");
-  }, 1000)
-});
